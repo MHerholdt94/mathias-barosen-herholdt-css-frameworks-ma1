@@ -1,0 +1,32 @@
+.navbar {
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1;
+    text-transform: uppercase;
+    box-shadow: 0 2px 3px getColour(shadow);
+
+    @media (min-width: $tablet-width) {
+        position: relative;
+        padding: 0 3rem;
+        box-shadow: none;
+    }
+
+    &-brand {
+        font-size: 36px;
+        font-weight: bold;
+    }
+
+    &-nav {
+        font-family: getFont(secondary);
+        padding-bottom: 2.5rem;
+
+        @media (min-width: $tablet-width) {
+            padding-bottom: 0;
+        }
+    }
+
+    &-toggler {
+        border: none;
+    }
+}

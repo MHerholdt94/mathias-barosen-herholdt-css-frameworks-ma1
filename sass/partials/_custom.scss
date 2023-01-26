@@ -1,0 +1,42 @@
+// Colours
+$colours: (
+    primary: #C32C72,
+    secondary: #F4F3EE,
+    tertiary: #463F3A,
+    bg-grey: #E5E5E5,
+    light-grey: #8D8D8D,
+    dark-grey: #262626,
+    shadow: #00000030,
+);
+
+@function getColour($colour) {
+    @return map-get($colours, $colour);
+}
+
+$light: getColour(secondary);
+$navbar-light-color: getColour(light-grey);
+$navbar-light-active-color: getColour(primary);
+$navbar-light-brand-color: getColour(dark-grey);
+$body-bg: getColour(bg-grey);
+
+// Fonts
+$fonts: (
+    primary: ("Open Sans", sans-serif),
+    secondary: ("Archivo Narrow", sans-serif),
+);
+
+@function getFont($font) {
+    @return map-get($fonts, $font);
+}
+
+$font-family-sans-serif: getFont(primary);
+$h1-font-size: 34px;
+
+// Widths
+$tablet-width: 768px;
+
+$container-max-widths: (
+  xl: 1280px
+);
+
+

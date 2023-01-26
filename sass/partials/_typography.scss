@@ -1,0 +1,10 @@
+h1 {
+    text-align: center;
+    margin-top: 6.5rem;
+    margin-bottom: 2rem;
+    color: getColour(tertiary);
+
+    @media (min-width: $tablet-width) {
+        margin: 3rem auto;
+    }
+}

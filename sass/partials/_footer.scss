@@ -1,0 +1,10 @@
+footer {
+    display: flex !important;
+    justify-content: space-between;
+    flex-shrink: 0;
+    background-color: getColour(secondary);
+    color: getColour(light-grey);
+    padding: 1rem 3rem;
+    font-size: 12px;
+    margin-top: 3rem;
+}
