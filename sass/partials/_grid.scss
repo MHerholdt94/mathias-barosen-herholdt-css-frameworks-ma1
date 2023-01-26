@@ -1,11 +1,11 @@
-.grid {
+.container {
     display: grid;
     grid-template-columns: repeat(auto-fill, 90%);
     grid-gap: 2rem;
     justify-content: center;
 
     @media (min-width: $tablet-width) {
-        grid-template-columns: repeat(auto-fill, 264px)
+        grid-template-columns: repeat(auto-fill, 264px);
     }
     
     &__item {
@@ -16,14 +16,14 @@
         padding-top: 100%;
     
         &--border {
-            @extend .grid__item;
+            @extend .container__item;
             border: 3px solid getColour(primary);
-            background-color: white
+            background-color: $white;
         }
     
         &--bg {
-            @extend .grid__item;
-            border: 3px solid white;
+            @extend .container__item;
+            border: 3px solid $white;
             background-color: getColour(primary);
         }
     }

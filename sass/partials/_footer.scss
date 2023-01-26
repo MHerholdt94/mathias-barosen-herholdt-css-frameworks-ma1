@@ -1,10 +1,19 @@
 footer {
-    display: flex !important;
-    justify-content: space-between;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    gap: 1rem;
     flex-shrink: 0;
-    background-color: getColour(secondary);
+    background-color: $white;
     color: getColour(light-grey);
-    padding: 1rem 3rem;
+    padding: 1.5rem;
     font-size: 12px;
     margin-top: 3rem;
+
+    @media (min-width: $tablet-width) {
+        flex-direction: row;
+        justify-content: space-between;
+        background-color: getColour(secondary);
+        padding: 1rem 3rem;
+    }
 }
